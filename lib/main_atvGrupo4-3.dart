@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 void main() => runApp(MaterialApp(home: TelaLogin()));
 
 class TelaLogin extends StatelessWidget {
+  const TelaLogin({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +25,8 @@ class TelaLogin extends StatelessWidget {
 }
 
 class TelaHome extends StatelessWidget {
+  const TelaHome({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
