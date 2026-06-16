@@ -195,7 +195,7 @@ final GoRouter router = GoRouter(
     ),
 
     // INSERIR O CODIGO AQUI
-    GoRouter(
+    GoRoute(
       path: '/carrinho',
       builder: (context, state) => const CarrinhoPage(),
     ),
@@ -203,9 +203,11 @@ final GoRouter router = GoRouter(
 );
 
 void main() => runApp(MeuApp());
+
 class MeuApp extends StatelessWidget {
   const MeuApp({super.key});
 }
+
 @override
 Widget build(BuildContext context) {
   return MaterialApp.router(

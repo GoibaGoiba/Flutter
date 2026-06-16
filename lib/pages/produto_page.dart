@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:hello_world/main.dart';
+import 'package:hello_world/main_atvGrupo5-1.dart';
 
 // PÁGINA DE DETALHES DO PRODUTO
 class ProdutoPage extends StatelessWidget {

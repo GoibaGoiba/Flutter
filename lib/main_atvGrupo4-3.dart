@@ -13,7 +13,7 @@ class TelaLogin extends StatelessWidget {
         child: ElevatedButton(
           child: Text("Entrar"),
           onPressed: () {
-            Navigator.pushreplacement(
+            Navigator.pushReplacement(
               context,
               MaterialPageRoute(builder: (context) => TelaHome()),
             );
