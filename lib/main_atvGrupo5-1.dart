@@ -193,32 +193,30 @@ final GoRouter router = GoRouter(
         return ProdutoPage(produto: produto);
       },
     ),
-
-    // INSERIR O CODIGO AQUI
     GoRoute(
       path: '/carrinho',
       builder: (context, state) => const CarrinhoPage(),
     ),
   ],
 );
+void main() => runApp(MyApp());
 
-void main() => runApp(MeuApp());
-
-class MeuApp extends StatelessWidget {
-  const MeuApp({super.key});
-}
-
-@override
-Widget build(BuildContext context) {
-  return MaterialApp.router(
-    title: 'Suculentas & Cia',
-    debugShowCheckedModeBanner: false,
-    theme: ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF4A7C59)),
-      useMaterial3: true,
-    ),
-    routerConfig: router,
-  );
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp.router(
+      // Configura o MaterialApp para usar o GoRouter.
+      title: 'Suculentas & Cia',
+      debugShowCheckedModeBanner: false, // Remove a tag de debug.
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF4A7C59)),
+        useMaterial3: true,
+      ),
+      routerConfig:
+          router, // Informa ao MaterialApp qual é a configuração de rotas a ser utilizada.
+    );
+  }
 }
 
 // HOME PAGE

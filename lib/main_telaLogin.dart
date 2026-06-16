@@ -28,7 +28,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double largura = MediaQuery.of(context).size.width;
-    double altura = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: AppBar(),
