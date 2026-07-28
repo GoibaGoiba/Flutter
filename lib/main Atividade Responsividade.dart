@@ -28,7 +28,7 @@ class SafeAreaExample extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
+                      SizedBox(
                         width: largura * 0.8,
                         child: TextField(
                           decoration: InputDecoration(
@@ -38,7 +38,7 @@ class SafeAreaExample extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 20),
-                      Container(
+                      SizedBox(
                         width: largura * 0.8,
                         child: TextField(
                           obscureText: true,
@@ -53,36 +53,36 @@ class SafeAreaExample extends StatelessWidget {
                         onPressed: () {
                           // Ação de login
                         },
-                        child: Text("Entrar"),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(350, 50),
                         ),
+                        child: Text("Entrar"),
                       ),
                       SizedBox(height: 20),
                       ElevatedButton(
                         onPressed: () {
                           // Ação de cadastro
                         },
-                        child: Text("Criar conta"),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(350, 50),
                           backgroundColor: Colors.transparent,
                           shadowColor: Colors.transparent,
                           elevation: 0,
                         ),
+                        child: Text("Criar conta"),
                       ),
                       SizedBox(height: 400),
                       ElevatedButton(
                         onPressed: () {
                           //botão escondido
                         },
-                        child: Text(""),
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(350, 50),
                           backgroundColor: Colors.transparent,
                           shadowColor: Colors.transparent,
                           elevation: 0,
                         ),
+                        child: Text(""),
                       ),
                     ],
                   ),

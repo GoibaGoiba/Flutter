@@ -30,6 +30,7 @@ class _ContadorTelaState extends State<ContadorTela> {
     });
   }
 
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(

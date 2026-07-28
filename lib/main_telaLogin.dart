@@ -73,20 +73,20 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: () {},
-                    child: Text("Entrar"),
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(largura * 0.85, 60),
                     ),
+                    child: Text("Entrar"),
                   ),
                   SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: () {},
-                    child: Text("Criar Conta"),
                     style: ElevatedButton.styleFrom(
                       minimumSize: Size(largura * 0.85, 60),
                       backgroundColor: Colors.transparent,
                       shadowColor: Colors.transparent,
                     ),
+                    child: Text("Criar Conta"),
                   ),
                   SizedBox(height: 1000), // Para testar o scroll
                   ElevatedButton(onPressed: () {}, child: Text("")),
