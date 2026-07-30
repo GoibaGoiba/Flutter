@@ -141,7 +141,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           backgroundColor: Color(0xFFFFFDE7),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           title: Text(tarefa == null ? "Nova Tarefa" : "Editar Tarefa", textAlign: TextAlign.center),
-          content: Container(
+          content: SizedBox(
             width: MediaQuery.of(context).size.width * 0.9,
             height: MediaQuery.of(context).size.height * 0.6,
             child: SingleChildScrollView(
@@ -267,7 +267,7 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                           decoration: t["concluida"] ? TextDecoration.lineThrough : null,
                         ),
                       ),
-                      subtitle: Text("${t["hora"]} - ${t["descricao"].toString().length > 50 ? t["descricao"].toString().substring(0, 50) + '...' : t["descricao"]}"),
+                      subtitle: Text("${t["hora"]} - ${t["descricao"].toString().length > 50 ? '${t["descricao"].toString().substring(0, 50)}...' : t["descricao"]}"),
                       trailing: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
