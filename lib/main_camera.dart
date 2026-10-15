@@ -360,7 +360,7 @@ class TelaTreinos extends StatelessWidget {
           child: DropdownButtonFormField<String>(
             // Usando "value" (em vez de "initialValue") para manter
             // compatibilidade com versões estáveis mais amplas do Flutter.
-            value: treinoSelecionado,
+            initialValue: treinoSelecionado,
             dropdownColor: AppColors.inputFundo,
             decoration: InputDecoration(
               labelText: "Escolha um treino",

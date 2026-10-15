@@ -124,7 +124,7 @@ class _TarefasPageState extends State<TarefasPage> {
                 const SizedBox(height: 12),
 
                 DropdownButtonFormField<String>(
-                  value: prioridadeSelecionada,
+                  initialValue: prioridadeSelecionada,
                   decoration: const InputDecoration(
                     labelText: 'Prioridade',
                     border: OutlineInputBorder(),

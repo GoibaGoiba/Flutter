@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "200825916773",
+    "project_id": "teste-project-pushnotif",
+    "storage_bucket": "teste-project-pushnotif.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200825916773:android:5ebab9f2dcd964a6ac658c",
+        "android_client_info": {
+          "package_name": "com.example.hello_world"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4zxt1bP3OXpXyXMmaHLYvNoyVJjvqPwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
